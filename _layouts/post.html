@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Blog | {{ page.title }}</title>
+    </head>
+    <style>
+        #bg {
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+        }
+    </style>
+
+{% include head.html %}
+
+    <body>  
+    
+        <div id="main" style="display: flex;">
+            <article id="blog" style="margin-top: 4%;" class="active">
+                <h2 class="major">{{ page.title }}</h2>
+                <h3>{{ page.subtitle }}</h3>
+                <h5>By: {{ page.author }}</h5>
+                {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                <h6> {{ page.date | date: date_format }} </h6>
+                <span class="image main"><img src="{{ page.cover-img }}" alt=""></span>
+                <p>{{ content }}</p>
+                <a href="{{ site.url }}/#blog"><div class="close">close</div></a>
+                <div style="margin: auto;">
+                    <a href="#" class="button">Back to top</a>
+                </div>
+            </article>
+        </div>
+
+        <div id="bg"></div>
+    
+
+    </body>
+
+</html>
+

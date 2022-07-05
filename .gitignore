@@ -1,0 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+Gemfile.lock
+*.gem
+.jekyll-cache
+vendor/
+.bundle/
+assets/images/favicon.icoZone.Identifier

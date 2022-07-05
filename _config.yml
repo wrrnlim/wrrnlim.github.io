@@ -1,0 +1,24 @@
+# Site settings
+title: Hi, my name is Warren
+email: youremailaddress@gmail.com
+description: I am a computing science + business student <br> at the University of Alberta.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: Warren Lim
+
+# Social settings
+facebook_url: 
+github_url: https://github.com/wrrnlim
+gitlab_url: 
+googleplus_url: 
+instagram_url: https://www.instagram.com/wrrnlim
+linkedin_url: https://www.linkedin.com/in/warrenlim/
+pinterest_url:
+slack_url:
+twitter_url: 
+
+# Build settings
+markdown: kramdown
+
+sass:
+style: compressed
