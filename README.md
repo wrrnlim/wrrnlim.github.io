@@ -7,5 +7,5 @@ This site is created with [Vite](https://vitejs.dev/), [React](https://reactjs.o
 This project was created with [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite), using:
 
 ```bash
-npm create vite@latest my-vue-app --template react
+npm create vite@latest my-react-app --template react
 ```

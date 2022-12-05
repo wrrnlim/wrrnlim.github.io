@@ -1,20 +1,14 @@
 import './App.css'
-
-const styles = {
-  container: {
-      backgroundImage: `url("../images/bg.png")`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-      height: '100vh'
-  }
-};
+import Home from './components/Home.jsx'
 
 function App() {
   return (
-    <div className="App" style={styles}>
-      <h1>Hello World</h1>
+    <div id='wrapper'>
+      <Home />
+
+      <footer id="footer">
+        <p className="copyright">&copy; Warren Lim {new Date().getFullYear()}. Page adapted from <a href="https://html5up.net" target='_blank'>HTML5 UP</a>.</p>
+      </footer>
     </div>
   )
 }
