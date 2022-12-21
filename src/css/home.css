@@ -25,6 +25,10 @@
   padding: 0.5rem 0;
 }
 
+.btn-group .btn:hover {
+  background-color: #ffffff2b;
+}
+
 @media (max-width: 1650px) {
   .hero {
     width: 60%;

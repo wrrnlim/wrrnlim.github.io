@@ -13,22 +13,22 @@ function App() {
       height: '100vh',
       margin: '0 auto',
     },
-    bgOverlay: {
-      backgroundImage: 'linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../images/overlay.png")',
-      backgroundSize: 'auto, 256px 256px',
-      backgroundPosition: 'center, center',
-      backgroundRepeat: 'no-repeat, repeat',
-      width: '100vw',
-      height: '100vh'
-    }
   };
+
   return (
     <>
-      <div style={styles.bg}>
-        <div style={styles.bgOverlay}>
-          <Home />
+      <header style={{ paddingLeft: 0 }}>
+        <div
+          className='p-5 text-center bg-image'
+          style={styles.bg}
+        >
+          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+            <div className='d-flex flex-column justify-content-center align-items-center h-100'>
+              <Home />
+            </div>
+          </div>
         </div>
-      </div>
+    </header>
     </>
   )
 }
