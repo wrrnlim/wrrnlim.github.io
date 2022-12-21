@@ -1,6 +1,7 @@
 import './css/App.css'
 import Home from './components/Home.jsx'
 import './css/App.css'
+import Footer from './components/Footer';
 
 function App() {
   const styles = {
@@ -25,6 +26,7 @@ function App() {
           <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
             <div className='d-flex flex-column justify-content-center align-items-center h-100'>
               <Home />
+              <Footer />
             </div>
           </div>
         </div>
