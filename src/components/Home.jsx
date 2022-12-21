@@ -1,28 +1,62 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import '../css/home.css'
+import { MDBBtn, MDBBtnGroup, MDBIcon } from 'mdb-react-ui-kit';
 
-export default (props) => {
- //let alt = props.alt || "image avatar";
- return (
-	<header id="header">
-		<div className="logo">
-      <img class=".logo img" src="images/wl_logo_nostroke_white.png" alt="logo" />
-		</div>
-		<div className="content">
-			<div className="inner">
-				<h1>Hi, my name is Warren</h1>
-				<p>I AM A COMPUTING SCIENCE MAJOR AND BUSINESS MINOR <br />
-            STUDENT AT THE UNIVERSITY OF ALBERTA.</p>
-			</div>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#intro">Intro</a></li>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			
-			</ul>
-		</nav>
-	</header>
-    )
+export default function Home() {
+  
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 800) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, [screenWidth]);
+
+  return (
+    <>
+      <div className='text-white hero'>
+        <h1 className='mb-5 hero-title'>Hi, my name is Warren</h1>
+        <h4 className='mb-auto hero-sub'>
+          I AM A COMPUTING SCIENCE MAJOR + BUSINESS MINOR<br />
+          STUDENT AT THE UNIVERSITY OF ALBERTA.
+        </h4>
+      </div>
+      <MDBBtnGroup size='lg' shadow='0' aria-label='Navigation buttons' className='mt-5' vertical={smallScreen}>
+        <MDBBtn color='light' outline className='btn-hover' >
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fas icon='pen-square' /> &nbsp;
+            Blog
+          </div>
+        </MDBBtn>
+        <MDBBtn color='light' hoverColor='red' outline>
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fas icon='tools' /> &nbsp;
+            Projects
+          </div>
+        </MDBBtn>
+        <MDBBtn color='light' outline>
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fab icon='github' /> &nbsp;
+            GitHub
+          </div>
+        </MDBBtn>
+        <MDBBtn color='light' outline>
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fab icon='linkedin-in' /> &nbsp;
+            LinkedIn
+          </div>
+        </MDBBtn>
+      </MDBBtnGroup>
+    </>
+  );
 }
