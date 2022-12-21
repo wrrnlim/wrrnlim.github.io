@@ -1,15 +1,35 @@
-import './App.css'
+import './css/App.css'
 import Home from './components/Home.jsx'
+import './css/App.css'
 
 function App() {
+  const styles = {
+    bg: {
+      backgroundImage: `url('../images/bg.png')`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh',
+      margin: '0 auto',
+    },
+    bgOverlay: {
+      backgroundImage: 'linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../images/overlay.png")',
+      backgroundSize: 'auto, 256px 256px',
+      backgroundPosition: 'center, center',
+      backgroundRepeat: 'no-repeat, repeat',
+      width: '100vw',
+      height: '100vh'
+    }
+  };
   return (
-    <div id='wrapper'>
-      <Home />
-
-      <footer id="footer">
-        <p className="copyright">&copy; Warren Lim {new Date().getFullYear()}. Page adapted from <a href="https://html5up.net" target='_blank'>HTML5 UP</a>.</p>
-      </footer>
-    </div>
+    <>
+      <div style={styles.bg}>
+        <div style={styles.bgOverlay}>
+          <Home />
+        </div>
+      </div>
+    </>
   )
 }
 

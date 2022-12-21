@@ -1,19 +1,12 @@
 import React from 'react';
+import '../css/home.css';
 
-export default (props) => {
- //let alt = props.alt || "image avatar";
+export default function Home() {
  return (
-	<header id="header">
-		<div className="logo">
-      <img class=".logo img" src="images/wl_logo_nostroke_white.png" alt="logo" />
-		</div>
-		<div className="content">
-			<div className="inner">
-				<h1>Hi, my name is Warren</h1>
-				<p>I AM A COMPUTING SCIENCE MAJOR AND BUSINESS MINOR <br />
-            STUDENT AT THE UNIVERSITY OF ALBERTA.</p>
-			</div>
-		</div>
+	<div id="header">
+    <h1>Hi, my name is Warren</h1>
+      <p>I AM A COMPUTING SCIENCE MAJOR AND BUSINESS MINOR <br />
+          STUDENT AT THE UNIVERSITY OF ALBERTA.</p>
 		<nav>
 			<ul>
 				<li><a href="#intro">Intro</a></li>
@@ -23,6 +16,6 @@ export default (props) => {
 			
 			</ul>
 		</nav>
-	</header>
+	</div>
     )
 }
