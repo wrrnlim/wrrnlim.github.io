@@ -15,13 +15,29 @@
 .hero {
   padding: 4rem 0;
   width: 40%;
-  border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea;
+  border-top: 0.125rem solid #eaeaea;
+  border-bottom: 0.125rem solid #eaeaea;
 }
 
 .hero-btn {
   font-size: 16px;
-  min-width: 100px;
+  min-width: 120px;
   padding: 0.5rem 0;
+}
+
+@media (max-width: 1650px) {
+  .hero {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    width: 90%;
+  }
+
+  .hero-sub {
+    font-size: 0.8rem;
+  }
 }
 
