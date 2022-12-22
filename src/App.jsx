@@ -1,12 +1,12 @@
-import './css/App.css'
-import Home from './components/Home.jsx'
-import './css/App.css'
+import './css/App.css';
+import backgroundImage from '/assets/img/bg.png';
+import Home from './components/Home.jsx';
 import Footer from './components/Footer';
 
 function App() {
   const styles = {
     bg: {
-      backgroundImage: `url('/img/bg.png')`,
+      backgroundImage: `url(${backgroundImage})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
