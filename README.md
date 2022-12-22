@@ -1,11 +1,20 @@
-# Portfolio Website
+## Template   
+Dimension by HTML5 UP  
+html5up.net | @ajlkn  
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)  
 
-This site is created with [Vite](https://vitejs.dev/), [React](https://reactjs.org/), and [TailwindCSS](https://tailwindcss.com/).
+AJ  
+aj@lkn.io | @ajlkn  
 
-## Getting Started
 
-This project was created with [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite), using:
+## Credits
 
-```bash
-npm create vite@latest my-react-app --template react
-```
+Logo, images, and content:  
+- Warren Lim
+
+Icons:  
+- Font Awesome (fontawesome.io)
+
+Other:  
+- jQuery (jquery.com)
+- Responsive Tools (github.com/ajlkn/responsive-tools)
