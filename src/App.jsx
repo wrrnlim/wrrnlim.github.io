@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 function App() {
   const styles = {
     bg: {
-      backgroundImage: `url('/images/bg.png')`,
+      backgroundImage: `url('images/bg.png')`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
