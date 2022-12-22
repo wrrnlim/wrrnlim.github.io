@@ -1,0 +1,63 @@
+.hero-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+}
+
+.hero-sub {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.hero {
+  padding: 4rem 0;
+  width: 40%;
+  border-top: 0.125rem solid #eaeaea;
+  border-bottom: 0.125rem solid #eaeaea;
+}
+
+.hero-btn {
+  font-size: 18px;
+  min-width: 120px;
+  padding: 0.5rem 0;
+  font-weight: 300;
+}
+
+.btn-group .btn:hover {
+  background-color: #ffffff2b;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  color: #ffffff8f;
+}
+
+
+/* Small Screens */
+@media (max-width: 1650px) {
+  .hero {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    width: 90%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-sub {
+    font-size: 0.8rem;
+  }
+}
+
