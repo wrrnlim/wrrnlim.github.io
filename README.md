@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This site is created with [Vite](https://vitejs.dev/), [React](https://reactjs.org/), and [TailwindCSS](https://tailwindcss.com/).
+This site is created with [Vite](https://vitejs.dev/), [React](https://reactjs.org/), and [MDBootstrap](https://mdbootstrap.com/docs/react/).
 
 ## Getting Started
 
