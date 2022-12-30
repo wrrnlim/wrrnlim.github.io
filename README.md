@@ -9,3 +9,7 @@ This project was created with [create-vite](https://github.com/vitejs/vite/tree/
 ```bash
 npm create vite@latest my-react-app --template react
 ```
+
+## Build and Deploy
+
+Pushing changes to the `main` branch will trigger a GitHub Action to build and deploy the site to GitHub Pages. The build files are stored in the `gh-pages` branch.
