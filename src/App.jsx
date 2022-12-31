@@ -1,6 +1,6 @@
 import './css/App.css';
 import backgroundImage from '/assets/img/bg.png';
-import Home from './components/Home.jsx';
+import Home from './routes/Home.jsx';
 import Footer from './components/Footer';
 import Background from './components/Background';
 
