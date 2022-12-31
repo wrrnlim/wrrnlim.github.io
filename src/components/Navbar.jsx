@@ -9,10 +9,8 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
-  MDBBtn,
   MDBIcon,
   MDBNavbarNav,
-  MDBInputGroup
 } from 'mdb-react-ui-kit';
 
 
@@ -20,28 +18,6 @@ import {
 export default function Navbar() {
   const [navToggled, setNavToggler] = useState(false);
   return (
-    // <div>
-    //   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-2">
-    //     <div class="container-fluid">
-    //       <a class="navbar-brand me-2" href="/">
-    //         <img src={`${navLogo}`} height="16" alt="Logo" style={{ marginTop: "-1px" }}></img>
-    //       </a>
-    //       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navCollapse"> <i class="fas fa-bars"></i> </button>
-    //       <div class="collapse navbar-collapse" id='navCollapse'>
-    //         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    //           <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
-    //           <li class="nav-item"> <a class="nav-link" href="">Projects</a> </li>
-    //           <li class="nav-item"> <a class="nav-link" href="">Blog</a> </li>
-    //         </ul>
-    //         <div class="d-flex align-items-center">
-    //           <a class="text-reset me-3"> <i class="fab fa-github"></i></a>
-    //           <a class="text-reset me-3"><i class="fab fa-linkedin"></i></a>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </nav>
-    // </div>
-
     <>
       <MDBNavbar expand='lg' dark bgColor='dark'>
         <MDBContainer fluid>
@@ -62,16 +38,16 @@ export default function Navbar() {
           <MDBCollapse navbar show={navToggled}>
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current='page' href='#'>
+                <MDBNavbarLink aria-current='page' href='#'>
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Link</MDBNavbarLink>
+                <MDBNavbarLink href='#'>Blog</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
-                  Disabled
+                <MDBNavbarLink active href='#' tabIndex={-1} aria-disabled='true'>
+                  Projects
                 </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
