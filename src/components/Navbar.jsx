@@ -1,6 +1,6 @@
 import navLogo from '/assets/img/wl_logo_nav.png';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MDBNavbar,
   MDBContainer,
@@ -15,8 +15,16 @@ import {
 
 
 
-export default function Navbar() {
+export default function Navbar(isActive) {
   const [navToggled, setNavToggler] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    if (currentPath === '/blog') setActiveLink('blog');
+    else if (currentPath === '/projects') setActiveLink('projects');
+  }, []);
+
   return (
     <>
       <MDBNavbar expand='lg' dark bgColor='dark'>
@@ -38,15 +46,17 @@ export default function Navbar() {
           <MDBCollapse navbar show={navToggled}>
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink aria-current='page' href='#'>
+                <MDBNavbarLink href='/'>
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Blog</MDBNavbarLink>
+                <MDBNavbarLink active={activeLink === 'blog'} href='/blog'>
+                  Blog
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active href='#' tabIndex={-1} aria-disabled='true'>
+                <MDBNavbarLink active={activeLink === 'projects'} href='/projects'>
                   Projects
                 </MDBNavbarLink>
               </MDBNavbarItem>
