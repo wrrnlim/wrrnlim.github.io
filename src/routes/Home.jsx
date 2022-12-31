@@ -32,22 +32,18 @@ export default function Home() {
         </h4>
       </div>
       <MDBBtnGroup size='lg' shadow='0' aria-label='Navigation buttons' className='mt-5' vertical={smallScreen}>
-        <MDBTooltip tag='a' title='Coming soon!'>
-          <MDBBtn color='light' outline className='btn-hover' disabled>
-            <div className='hero-btn'>
-              <MDBIcon size='lg' fas icon='pen-square' /> &nbsp;
-              Blog
-            </div>
-          </MDBBtn>
-        </MDBTooltip>
-        <MDBTooltip tag='a' title='Coming soon!'>
-          <MDBBtn color='light' hoverColor='red' outline disabled>
-            <div className='hero-btn'>
-              <MDBIcon size='lg' fas icon='tools' /> &nbsp;
-              Projects
-            </div>
-          </MDBBtn>
-        </MDBTooltip>
+        <MDBBtn color='light' outline href='/blog'>
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fas icon='pen-square' /> &nbsp;
+            Blog
+          </div>
+        </MDBBtn>
+        <MDBBtn color='light' outline href='/projects'>
+          <div className='hero-btn'>
+            <MDBIcon size='lg' fas icon='tools' /> &nbsp;
+            Projects
+          </div>
+        </MDBBtn>
         <MDBBtn color='light' outline href='https://github.com/wrrnlim/' target='_blank'>
           <div className='hero-btn'>
             <MDBIcon size='lg' fab icon='github' /> &nbsp;
