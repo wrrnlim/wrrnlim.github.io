@@ -18,13 +18,11 @@ export default function Background(props) {
     <>
       <header style={{ paddingLeft: 0, position: 'relative' }}>
         <div
-          className='p-5 text-center bg-image'
+          className='bg-image'
           style={styles.bg}
         >
           <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-            <div className='d-flex flex-column justify-content-center align-items-center h-100'>
-              {props.children}
-            </div>
+            {props.children}
           </div>
         </div>
       </header>
