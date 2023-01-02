@@ -22,6 +22,7 @@ export default function Background(props) {
       zIndex: 1,
     },
     content: {
+      height: '100vh',
       zIndex: 2,
     }
   };

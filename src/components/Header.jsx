@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import '../css/home.css'
 import { MDBBtn, MDBBtnGroup, MDBContainer, MDBIcon } from 'mdb-react-ui-kit';
+import Footer from './Footer';
 
 export default function Header() {
 
@@ -24,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <header className='d-flex align-items-center justify-content-center' style={{ height: 'calc(100vh - 7.6rem)', flexDirection: 'column' }}>
+      <header className='d-flex align-items-center justify-content-center' style={{ height: '100vh', flexDirection: 'column' }}>
         <div className='text-white hero text-center'>
           <h1 className='mb-5 hero-title text-center'>Hi, my name is Warren</h1>
           <h4 className='mb-auto hero-sub'>
@@ -58,6 +59,7 @@ export default function Header() {
             </div>
           </MDBBtn>
         </MDBBtnGroup>
+        <Footer />
       </header>
     </>
   );
