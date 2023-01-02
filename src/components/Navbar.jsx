@@ -20,9 +20,9 @@ export default function Navbar(isActive) {
   const [activeLink, setActiveLink] = useState(null);
 
   useEffect(() => {
-    const currentPath = window.location.pathname;
-    if (currentPath === '/blog') setActiveLink('blog');
-    else if (currentPath === '/projects') setActiveLink('projects');
+    const currentPath = window.location.hash;
+    if (currentPath === '#/blog') setActiveLink('blog');
+    else if (currentPath === '#/projects') setActiveLink('projects');
   }, []);
 
   return (
@@ -51,12 +51,12 @@ export default function Navbar(isActive) {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active={activeLink === 'blog'} href='/blog'>
+                <MDBNavbarLink active={activeLink === 'blog'} href='/#/blog'>
                   BLOG
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active={activeLink === 'projects'} href='/projects'>
+                <MDBNavbarLink active={activeLink === 'projects'} href='/#/projects'>
                   PROJECTS
                 </MDBNavbarLink>
               </MDBNavbarItem>
