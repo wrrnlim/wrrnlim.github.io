@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+  Routes,
+  HashRouter,
+  Route,
 } from "react-router-dom";
 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
@@ -14,24 +15,14 @@ import Projects from './routes/Projects';
 import Blog from './routes/Blog';
 import Home from './routes/Home';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/projects',
-    element: <Projects />,
-  },
-  {
-    path: '/blog',
-    element: <Blog />,
-  }
-]);
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={ <Home /> } errorElement={ <ErrorPage /> }/>
+        <Route path='/projects' element={ <Projects /> }/>
+        <Route path='/blog' element={ <Blog /> }/>
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 )
