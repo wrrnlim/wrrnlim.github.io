@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 
 import {
   createBrowserRouter,
@@ -9,14 +8,16 @@ import {
 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import ErrorPage from './components/ErrorPage';
 import Projects from './routes/Projects';
 import Blog from './routes/Blog';
+import Home from './routes/Home';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
