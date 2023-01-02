@@ -47,17 +47,17 @@ export default function Navbar(isActive) {
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
                 <MDBNavbarLink href='/'>
-                  Home
+                  HOME
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink active={activeLink === 'blog'} href='/blog'>
-                  Blog
+                  BLOG
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink active={activeLink === 'projects'} href='/projects'>
-                  Projects
+                  PROJECTS
                 </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>

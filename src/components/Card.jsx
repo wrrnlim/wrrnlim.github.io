@@ -37,7 +37,7 @@ export default function Card(props) {
   return (
     <>
       <MDBContainer breakpoint="md">
-      <MDBCard className='bg-white mt-5 p-2'>
+      <MDBCard className='bg-white m-3 p-2'>
         <MDBRow className='g-0'>
           <MDBCol md='9'>
             <MDBCardBody>

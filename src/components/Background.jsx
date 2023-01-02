@@ -10,22 +10,31 @@ export default function Background(props) {
       backgroundRepeat: 'no-repeat',
       width: '100vw',
       height: '100vh',
-      margin: '0 auto',
+      overflow: 'auto',
+      position: 'relative',
     },
+    mask: {
+      backgroundColor: 'rgba(0, 0, 0, 0.6)',
+      width: '100%',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      zIndex: 1,
+    },
+    content: {
+      zIndex: 2,
+    }
   };
 
   return (
     <>
-      <header style={{ paddingLeft: 0, position: 'relative' }}>
-        <div
-          className='bg-image'
-          style={styles.bg}
-        >
-          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+      <div style={styles.bg}>
+        <div style={styles.mask}>
+          <div style={styles.content}>
             {props.children}
           </div>
         </div>
-      </header>
+      </div>
     </>
   )
 }
