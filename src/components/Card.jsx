@@ -15,7 +15,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function Card(props) {
 
-  const { title, text, badge, codeURL, notesURL } = props;
+  const { title, text, badge, codeURL, guideURL } = props;
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [flexDirection, setflexDirection] = useState(null);
@@ -55,9 +55,9 @@ export default function Card(props) {
               <MDBIcon fas icon='code' className='me-2'/>
                 Code
             </MDBBtn>
-            <MDBBtn className='my-1 me-3' outline color='dark' style={{width: '150px'}} href={notesURL} disabled={notesURL == undefined} target='_blank'>
+            <MDBBtn className='my-1 me-3' outline color='dark' style={{width: '150px'}} href={guideURL} disabled={guideURL == undefined} target='_blank'>
               <MDBIcon fas icon='file-alt' className='me-2'/>
-                Notes
+                Guide
             </MDBBtn>
           </MDBCol>
         </MDBRow>
