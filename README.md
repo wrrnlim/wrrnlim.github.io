@@ -13,3 +13,7 @@ npm create vite@latest my-react-app --template react
 ## Build and Deploy
 
 Pushing changes to the `main` branch will trigger a GitHub Action to build and deploy the site to GitHub Pages. The build files are stored in the `gh-pages` branch.
+
+## Issues
+
+- Routing issues: https://stackoverflow.com/a/74149347/17225509
