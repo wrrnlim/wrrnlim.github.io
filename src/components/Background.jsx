@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from '/assets/img/bgdark.png';
+import backgroundImage from '/assets/img/bg.png';
 
 export default function Background(props) {
   const styles = {
@@ -13,12 +13,28 @@ export default function Background(props) {
       overflow: 'auto',
       position: 'relative',
     },
+    mask: {
+      backgroundColor: 'rgba(0, 0, 0, 0.6)',
+      width: '100%',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      zIndex: 1,
+    },
+    content: {
+      height: '100vh',
+      zIndex: 2,
+    }
   };
 
   return (
     <>
       <div style={styles.bg}>
-        {props.children}
+        <div style={styles.mask}>
+          <div style={styles.content}>
+            {props.children}
+          </div>
+        </div>
       </div>
     </>
   )
