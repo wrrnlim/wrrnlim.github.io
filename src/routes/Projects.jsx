@@ -16,6 +16,7 @@ export default function Projects() {
         text='This is the current website you are viewing! It was created using React with Material Design Bootstrap for the UI and Vite for development.'
         badge='https://img.shields.io/github/last-commit/wrrnlim/wrrnlim.github.io?style=flat-square'
         codeURL='https://github.com/wrrnlim/wrrnlim.github.io'
+        notesURL='https://github.com/wrrnlim/wrrnlim.github.io/blob/dev/README.md'
       />
       <Card
         title='Electron App Template'
