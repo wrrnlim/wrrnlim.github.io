@@ -1,9 +1,9 @@
-import { MDBContainer } from 'mdb-react-ui-kit'
 import React from 'react'
 import Background from '../components/Background'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import TitleCard from '../components/TitleCard'
 
 export default function Projects() {
   const privateBadge = 'https://img.shields.io/badge/last%20commit-private%20repo-inactive?style=flat-square'
@@ -11,6 +11,10 @@ export default function Projects() {
     <Background>
       <Navbar/>
       <div className='mt-4'></div>
+      <TitleCard
+        title='PROJECTS'
+        subtitle='Showcasing some of my projects'
+      />
       <Card
         title='wrrnlim.github.io'
         text='This is the current website you are viewing! It was created using React with Material Design Bootstrap for the UI and Vite for development.'
@@ -24,6 +28,13 @@ export default function Projects() {
         badge='https://img.shields.io/github/last-commit/wrrnlim/electron-app-template?style=flat-square'
         codeURL='https://github.com/wrrnlim/electron-app-template'
         notesURL='https://github.com/wrrnlim/electron-app-template/wiki/Starting-an-Electron-Project'
+      />
+      <Card
+        title='Discord.js Bot Template'
+        text='A template repository I created while learning how to create Discord.js bots. I created this template so that I (or anyone else) can quickly begin working on a Discord bot. Notes are available for this repository and includes a full tutorial on how to create a Discord bot and host it on Heroku. '
+        badge='https://img.shields.io/github/last-commit/wrrnlim/discordjs-bot-template?style=flat-square'
+        codeURL='https://github.com/wrrnlim/discordjs-bot-template'
+        notesURL='https://github.com/wrrnlim/discordjs-bot-template/blob/main/README.md'
       />
       <Card
         title='TabViewer'
