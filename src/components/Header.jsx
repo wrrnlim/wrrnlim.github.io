@@ -34,7 +34,7 @@ export default function Header() {
           </h4>
         </div>
         <MDBBtnGroup size='lg' shadow='0' aria-label='Navigation buttons' className='mt-5' vertical={smallScreen}>
-          <MDBBtn color='light' outline href='/#/blog'>
+          <MDBBtn color='light' outline href='https://wrrnlim.github.io/blog/'>
             <div className='hero-btn'>
               <MDBIcon size='lg' fas icon='pen-square' /> &nbsp;
               Blog
