@@ -1,7 +1,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import logo from '../../public/logo.png';
+import logo from '../assets/logo.png';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
