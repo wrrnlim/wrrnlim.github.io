@@ -1,12 +1,12 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Section from "./components/Section";
 
 function App() {
   return (
     <>
       <Hero />
-      <h1 className="text-3xl font-bold underline">Hi, I'm Warren</h1>
+      <Section title="About" />
     </>
   );
 }
