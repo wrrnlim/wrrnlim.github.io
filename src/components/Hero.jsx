@@ -16,11 +16,11 @@ const socials = [
   { name: 'GitHub', href: 'https://github.com/wrrnlim', logo: FaGithub },
 ]
 
-export default function Example() {
+export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-screen flex items-center justify-center">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
@@ -133,12 +133,12 @@ export default function Example() {
               Hi, I'm Warren
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Software developer with a degree in computer science + business, building smart and scalable solutions.
+              Software developer with a degree in computer science + business, building robust and maintainable solutions.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                className="rounded-md bg-[#facb72] px-3.5 py-2.5 text-sm font-semibold text-[#242935] hover:text-[#facb72] shadow-xs hover:bg-[#242935]"
+                href="#about"
+                className="rounded-md bg-[#facb72] px-5 py-2.5 text-sm font-semibold text-[#242935] hover:text-[#facb72] shadow-xs hover:bg-[#242935]"
               >
                 <FaArrowDown size={14} />
               </a>
