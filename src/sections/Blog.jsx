@@ -1,5 +1,5 @@
 import React from 'react'
-import constructionScreenshot from '../assets/crane.png'
+import constructionScreenshot from '../assets/crane.jpg'
 import Section from '../components/Section'
 import ProjectCard from '../components/ProjectCard'
 
