@@ -25,7 +25,7 @@ export default function Projects() {
         <ProjectCard
           image={constructionScreenshot}
           title="More Coming Soon"
-          description="More projects are in the works, which are not yet ready to be displayed. Stay tuned!"
+          description="More projects are in the works, but are not yet ready to be displayed. Stay tuned!"
         />
       </div>
     </Section>
