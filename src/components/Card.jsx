@@ -1,68 +1,9 @@
-import {
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBCardText,
-  MDBCardTitle,
-  MDBBtn,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-} from 'mdb-react-ui-kit'
+import React from 'react'
 
-import React, { useEffect, useState } from 'react'
-
-
-export default function Card(props) {
-
-  const { title, text, badge, codeURL, notesURL } = props;
-
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [flexDirection, setflexDirection] = useState(null);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (screenWidth < 768) {
-      setflexDirection('flex-row');
-    } else {
-      setflexDirection('flex-column');
-    }
-  }, [screenWidth]);
-  
+export default function Card({ children }) {
   return (
-    <>
-      <MDBContainer breakpoint="md">
-      <MDBCard className='bg-white m-3 p-2'>
-        <MDBRow className='g-0'>
-          <MDBCol md='9'>
-            <MDBCardBody>
-              <MDBCardTitle tag='h3'>{title}</MDBCardTitle>
-              <MDBCardText> {text}</MDBCardText>
-              <MDBCardText>
-                <small className='text-muted'>
-                  <img alt="GitHub last commit" src={badge}></img>
-                </small>
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCol>
-          <MDBCol md='3' className={'d-flex align-items-end justify-content-center ' + flexDirection}>
-            <MDBBtn className='my-1 me-3 ms-3' outline color='dark' style={{width: '150px'}} href={codeURL} disabled={codeURL == undefined} target='_blank'>
-              <MDBIcon fas icon='code' className='me-2'/>
-                Code
-            </MDBBtn>
-            <MDBBtn className='my-1 me-3' outline color='dark' style={{width: '150px'}} href={notesURL} disabled={notesURL == undefined} target='_blank'>
-              <MDBIcon fas icon='file-alt' className='me-2'/>
-                Notes
-            </MDBBtn>
-          </MDBCol>
-        </MDBRow>
-      </MDBCard>
-      </MDBContainer>
-    </>
+    <div className="rounded-xl p-10 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 mx-5 lg:mx-auto mb-10">
+      {children}
+    </div>
   )
 }
