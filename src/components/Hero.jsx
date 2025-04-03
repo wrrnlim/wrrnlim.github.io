@@ -6,10 +6,10 @@ import logo from '../assets/logo_bg.png';
 import { socialLinks } from '../constants/socials';
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#' },
-  { name: 'Blog', href: '#' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Blog', href: '#blog' },
 ]
 
 const socials = [
