@@ -1,7 +1,7 @@
 import React from 'react'
 import portfolioScreenshot from '../assets/portfolio_screenshot.png'
 import finflowScreenshot from '../assets/finflow_screenshot.png'
-import constructionScreenshot from '../assets/crane.jpg'
+import constructionScreenshot from '../assets/construction.png'
 import Section from '../components/Section'
 import ProjectCard from '../components/ProjectCard'
 
