@@ -1,12 +1,14 @@
 import "./App.css";
 import Hero from "./components/Hero";
-import Section from "./components/Section";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
     <>
       <Hero />
-      <Section title="About" />
+      <About />
+      <Projects />
     </>
   );
 }
