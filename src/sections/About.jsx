@@ -4,6 +4,7 @@ import { FaArrowRight, FaLinkedin } from 'react-icons/fa'
 import profileImg from '../assets/profile_img.jpeg'
 import Card from '../components/Card'
 import Section from '../components/Section'
+import Badge from '../components/Badge'
 
 export default function About() {
 
@@ -30,10 +31,10 @@ export default function About() {
                 <p className="text-gray-700">Software Developer at Trust Science</p>
                 <p className="text-gray-500">Sep 2021 - Mar 2025</p>
                 <div className="pt-1">
-                  <span className="inline-block bg-gray-200 rounded-full px-2 text-sm text-gray-700 mr-2 mb-2">JavaScript</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-2 text-sm text-gray-700 mr-2 mb-2">React</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-2 text-sm text-gray-700 mr-2 mb-2">Node</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-2 text-sm text-gray-700 mr-2 mb-2">AWS</span>
+                  <Badge>JavaScript</Badge>
+                  <Badge>React</Badge>
+                  <Badge>Node</Badge>
+                  <Badge>AWS</Badge>
                 </div>
               </div>
             </div>
