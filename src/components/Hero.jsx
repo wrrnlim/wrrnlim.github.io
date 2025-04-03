@@ -58,6 +58,7 @@ export default function Hero() {
                   className="text-gray-900 hover:cursor-pointer"
                   href={social.href}
                   target='_blank'
+                  key={social.name}
                 >
                   <social.logo
                     size={22}

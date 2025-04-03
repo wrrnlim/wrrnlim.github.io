@@ -19,12 +19,12 @@ const getLastDeployDate = async () => {
     });
   } catch (error) {
     console.error("Error fetching deploy date:", error);
-    return "Unknown";
+    return "- unable to get last deployment";
   }
 };
 
 export default function Footer() {
-  const [lastUpdated, setLastUpdated] = useState("Unknown");
+  const [lastUpdated, setLastUpdated] = useState("- getting last deployment");
   const year = new Date().getFullYear();
 
   useEffect(() => {
