@@ -3,17 +3,18 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
 import logo from '../assets/logo_bg.png';
+import { socialLinks } from '../constants/socials';
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
+  { name: 'About', href: '#about' },
   { name: 'Projects', href: '#' },
   { name: 'Blog', href: '#' },
 ]
 
 const socials = [
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/warrenlim/', logo: FaLinkedin },
-  { name: 'GitHub', href: 'https://github.com/wrrnlim', logo: FaGithub },
+  { name: 'LinkedIn', href: socialLinks.linkedin, logo: FaLinkedin },
+  { name: 'GitHub', href: socialLinks.github, logo: FaGithub },
 ]
 
 export default function Hero() {
@@ -56,6 +57,7 @@ export default function Hero() {
                 <a
                   className="text-gray-900 hover:cursor-pointer"
                   href={social.href}
+                  target='_blank'
                 >
                   <social.logo
                     size={22}

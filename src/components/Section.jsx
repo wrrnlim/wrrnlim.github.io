@@ -1,16 +1,11 @@
 import React from 'react'
-import Card from './Card'
+import { socialLinks } from '../constants/socials'
 import { FaArrowRight, FaLinkedin } from 'react-icons/fa'
 import profileImg from '../assets/profile_img.jpeg'
 
 export default function Section(props) {
   const { title } = props
-  const frontendSkills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Bootstrap'
-  ]
-  const backendSkills = [
-    'Node.js', 'Express.js', 'MongoDB', 'MySQL', 'REST APIs'
-  ]
+
   return (
     <div className="text-center">
       <h3 className="text-3xl font-bold my-5" id={title.toLowerCase()}>{title}</h3>
@@ -40,7 +35,7 @@ export default function Section(props) {
             <div className="pt-4 border-t border-gray-100">
               <p className="text-gray-600 italic text-sm">View all my education, work experience, and updated information on my LinkedIn profile.</p>
               <div className="mt-3 self-end flex justify-end">
-                <a href="https://linkedin.com/in/warrenlim" target='_blank' className="text-gray-800 hover:bg-[#ffcd71]/20 px-3 py-1 rounded-lg font-medium flex items-center gap-2 transition-all duration-200 group">
+                <a href={socialLinks.linkedin} target='_blank' className="text-gray-800 hover:bg-[#ffcd71]/20 px-3 py-1 rounded-lg font-medium flex items-center gap-2 transition-all duration-200 group">
                   <FaLinkedin className="text-lg" />
                   <span className="underline">View on LinkedIn</span>
                   <FaArrowRight className="group-hover:translate-x-1.5 transition-transform duration-200" />
