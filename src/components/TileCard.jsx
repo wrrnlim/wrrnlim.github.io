@@ -1,7 +1,7 @@
 import React from 'react'
-import Badge from '../components/Badge'
+import Badge from './Badge'
 
-export default function ProjectCard(props) {
+export default function TileCard(props) {
   const { image, title, description, badges=[] } = props
   return (
     <div className="max-w-70 rounded overflow-hidden mx-auto shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 mb-10">
