@@ -1,25 +1,32 @@
 import React from 'react'
 import portfolioScreenshot from '../assets/portfolio_screenshot.png'
+import finflowScreenshot from '../assets/finflow_screenshot.png'
+import constructionScreenshot from '../assets/construction.png'
 import Section from '../components/Section'
-import Badge from '../components/Badge'
+import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
 
   return (
     <Section title="Projects">
-      <div class="max-w-sm rounded overflow-hidden shadow-sm mx-auto hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
-        <img class="w-full h-40 object-cover" src={portfolioScreenshot} alt="Sunset in the mountains" />
-        <div class="px-6 py-4">
-          <h4 class="font-bold text-xl mb-2">Portfolio Site</h4>
-          <p class="text-gray-700 text-base">
-            This Next.js project is the site you are viewing right now!
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <Badge>Next.js</Badge>
-          <Badge>GitHub Pages</Badge>
-          <Badge>React</Badge>
-        </div>
+      <div className="flex flex-wrap justify-between">
+        <ProjectCard
+          image={portfolioScreenshot}
+          title="Portfolio Site"
+          description="This Next.js project is the site you are viewing right now!"
+          badges={['Next.js', 'React', 'GitHub Pages', 'Tailwind', 'Vite']}
+        />
+        <ProjectCard
+          image={finflowScreenshot}
+          title="FinFlow"
+          description="Finance management app that helps you track your income and expenses, with a monthly overview of your finances."
+          badges={['React', 'Tailwind', 'Firebase', 'Vite']}
+        />
+        <ProjectCard
+          image={constructionScreenshot}
+          title="More Coming Soon"
+          description="More projects are in the works, which are not yet ready to be displayed. Stay tuned!"
+        />
       </div>
     </Section>
   )
