@@ -117,11 +117,11 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               Hi, I'm Warren
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Software developer with a degree in computer science + business, building robust and maintainable applications.
+              Software developer with a degree in computer science + business, bridging technology and business.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
