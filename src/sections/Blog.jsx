@@ -1,5 +1,3 @@
-import React from 'react'
-import constructionScreenshot from '../assets/construction.png'
 import Section from '../components/Section'
 import ProjectCard from '../components/ProjectCard'
 
@@ -9,7 +7,7 @@ export default function Blog() {
     <Section title="Blog">
       <div className="flex flex-wrap justify-between">
         <ProjectCard
-          image={constructionScreenshot}
+          image='images/construction.png'
           title="Blogs Coming Soon"
           description="The blog section is currently being built."
         />
