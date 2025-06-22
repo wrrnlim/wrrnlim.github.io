@@ -6,6 +6,8 @@ const projects = [
     description: 'This React project is the site you are viewing right now!',
     contentPath: '/content/projects/portfolio.md',
     image: '/images/portfolio_screenshot.png',
+    liveUrl: 'https://wrrnlim.github.io',
+    repoUrl: 'https://github.com/wrrnlim/wrrnlim.github.io'
   },
   {
     id: 'finflow',
