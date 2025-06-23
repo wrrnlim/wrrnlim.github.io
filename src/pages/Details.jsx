@@ -19,7 +19,10 @@ export default function Details() {
     const fetchContent = async () => {
       try {
         const res = await fetch(project.contentPath)
-        if (res.headers.get('Content-Type') !== 'text/markdown') throw new Error('Invalid content type')
+        const contentType = res.headers.get('Content-Type') || '';
+        if (!contentType.startsWith('text/markdown')) {
+          throw new Error('Invalid content type');
+        }
         const text = await res.text()
         setContent(text)
       } catch (err) {
