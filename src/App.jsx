@@ -1,20 +1,21 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import "./App.css";
-import Hero from "./components/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Blog from "./sections/Blog";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Details from './pages/Details';
+import NotFound from './pages/NotFound';
+
 
 function App() {
   return (
-    <>
-      <Hero />
-      <About />
-      <Projects />
-      <Blog />
-      <Footer />
-    </>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:id" element={<Details />} />
+        <Route path="/blogs/:id" element={<Details />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

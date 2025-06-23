@@ -1,7 +1,5 @@
-import React from 'react'
 import { socialLinks } from '../constants/socials'
 import { FaArrowRight, FaLinkedin } from 'react-icons/fa'
-import profileImg from '../assets/profile_img.jpeg'
 import Card from '../components/Card'
 import Section from '../components/Section'
 import Badge from '../components/Badge'
@@ -15,7 +13,7 @@ export default function About() {
           <div className="md:col-span-3 p-4 flex justify-center items-center">
             <img
               alt="Profile Photo"
-              src={profileImg}
+              src='images/profile_img.jpeg'
               className="max-h-40 w-auto rounded-full shadow-sm ring-4 ring-gray-100"
             />
           </div>

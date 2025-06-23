@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
-import logo from '../assets/logo.png';
 import { socialLinks } from '../constants/socials';
 
 const navigation = [
@@ -29,7 +28,7 @@ export default function Hero() {
               <span className="sr-only">Warren's Logo</span>
               <img
                 alt=""
-                src={logo}
+                src='images/logo.png'
                 className="h-8 w-auto rounded"
               />
             </a>
