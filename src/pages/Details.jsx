@@ -48,13 +48,13 @@ export default function Details() {
           </svg>
           Back
         </button>
-        <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
+        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
         <div className="flex flex-wrap mt-4 mb-2">
           {project.skills.map(skill => (
             <Badge key={skill}>{skill}</Badge>
           ))}
         </div>
-        <div className="flex flex-wrap mt-2 mb-4 gap-2">
+        <div className="flex flex-wrap mt-2 mb-6 gap-2">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
