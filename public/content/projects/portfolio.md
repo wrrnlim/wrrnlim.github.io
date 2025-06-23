@@ -38,3 +38,7 @@ This allows any new project/blog pages to be easily added.
 ### Markdown Rendering
 
 The projects and blogs content is written and stored as markdown files and rendered using [`react-markdown`](https://github.com/remarkjs/react-markdown) with custom styling. This enables content to be updated easily, while keeping the look and feel of each page consistent.
+
+### Automated Deploys
+
+This site is hosted on GitHub pages and uses GitHub Actions for CI/CD. with build and deploys automated using GitHub Actions. New features are developed on feature branches and pushed to the `dev` branch when complete. The features are then tested, and merged into `main` if successful. The main branch is configured to trigger an automated build and deployment workflow, ensuring that all updates are reliably and consistently delivered.
