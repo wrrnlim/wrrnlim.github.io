@@ -50,7 +50,7 @@ export default function MarkdownRenderer({ children }) {
         a: ({ href, children, ...props }) => (
           <a
             href={href}
-            className="text-blue-600 hover:underline underline-offset-2"
+            className="text-gray-600 hover:underline underline-offset-2"
             target="_blank"
             rel="noopener noreferrer"
             {...props}
