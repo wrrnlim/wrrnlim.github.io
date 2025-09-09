@@ -10,6 +10,14 @@ const projects = [
     repoUrl: 'https://github.com/wrrnlim/wrrnlim.github.io'
   },
   {
+    id: 'respondme',
+    title: 'RespondMe',
+    skills: ['Next.js', 'Tailwind', 'Supabase', 'Vite'],
+    description: 'A platform to manage and track personalized event invitations',
+    contentPath: '/content/projects/respondme.md',
+    image: '/images/respondme_screenshot.png',
+  },
+  {
     id: 'finflow',
     title: 'FinFlow',
     skills: ['React', 'Tailwind', 'Firebase', 'Vite'],
