@@ -120,7 +120,7 @@ export default function Hero() {
               Hi, I'm Warren
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Software developer with a degree in computer science + business, bridging technology and business.
+              Systems Analyst and Software developer with a degree in computer science + business, bridging technology and business.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
