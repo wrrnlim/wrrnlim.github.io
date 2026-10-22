@@ -35,7 +35,7 @@ export default function About() {
       <Card>
         <div className="mx-auto max-w-3xl text-left">
           <header className="flex justify-center border-b border-gray-200 pb-7">
-            <img alt="Profile Photo" src="images/profile_img.jpeg" className="h-28 w-28 rounded-full object-cover shadow-sm ring-4 ring-gray-100" />
+            <img alt="Profile Photo" src="images/profile_img.png" className="h-28 w-28 rounded-full object-cover shadow-sm ring-4 ring-gray-100" />
           </header>
 
           <section className='py-8' aria-labelledby="experience-heading">
